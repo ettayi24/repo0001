@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<img src="{% static 'logo.jpg' %}" alt="no image" width="190px" height="150px" style="position: absolute;margin-left: 50px;margin-top: 150px;">
+<div class="text-center  bg-light m-5" style="width: 1190px;height: 450px;" >
+    <div class="text-center " style="margin-top: 80px;">
+        <h4>
+            ...Ambani Ji(AJ) Hospital, Mumbai is one of the most modern and state-of-the-art multi-specialty tertiary care hospitals, was established in 2008 by Reliance Group of Industries. AJ Hospital is accredited by the Joint Commission International (JCI) and the National Accreditation…
+        </h4>
+    </div>
+    <div class="bg-light" style="position: absolute;margin-top: 60px;margin-left: 530px;">
+<img src="{% static 'hospital-award.jpg' %}" alt="moonji" style="width: 200px;height: 230px;">
+<p>our hounerable chairman <span style="text-decoration: underline;"class='mr-1'>MR.RAJEEV PRABHU</span>receiving best hospital ward</p>
+    </div>
+</div>
+
+{% endblock %}

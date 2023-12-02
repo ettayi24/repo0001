@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container w-50 " style="margin-top: 60px;">
+    <h1 class="text-center bg-light mt-3">MAKE AN APPOINTMENT</h1>
+    <form action="book" class="text-center" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{result|crispy}}
+        <button class="btn btn-secondary mb-5 mr-3" type="reset">CLEAR</button>
+        <button type="submit" class="btn btn-secondary mb-5">SUBMIT</button>
+    </form>
+    <hr class="mb-5">
+</div>
+{% endblock %}
